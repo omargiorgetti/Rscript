@@ -1,0 +1,23 @@
+Per la connessione
+inserire la url del proxy sul browser
+
+
+export http_proxy=http://proxy.regione.toscana.it:8080
+
+
+kubuntu
+su ap.conf.d creare proxy con dentro
+Acquire::http::proxy "http://proxy.regione.toscana.it:8080/";
+
+
+
+
+aggiunto a /etc/apt/sources.list
+deb http://rm.mirror.garr.it/mirrors/CRAN/bin/linux/ubuntu/natty/
+
+
+
+
+PNG certifcate per apt
+$ gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+$ gpg -a --export E084DAB9 | sudo apt-key add -
